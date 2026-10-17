@@ -19,7 +19,7 @@
         
         <!-- Error Message Text -->
         <p id="errorText" style="font-size: 16px; line-height: 1.5; color: #cccccc; margin-bottom: 25px;">
-            CRITICAL ERROR: 'conserbio_reviewer.pdf' is corrupted.
+            CRITICAL ERROR: file is corrupted. SIMHUTA AKONG TIIL PARA MAOPEN
         </p>
         
         <!-- Interactive Button -->
@@ -44,7 +44,7 @@
                 document.getElementById("errorIcon").style.color = "#ffcc00";
                 document.getElementById("errorBox").style.borderColor = "#ffcc00";
                 document.getElementById("errorTitle").innerHTML = "WARNING";
-                document.getElementById("errorText").innerHTML = "Attempting to isolate the threat... Failed. Phone files are being deleted.";
+                document.getElementById("errorText").innerHTML = "Attempting to isolate the threat... Failed. Phone files are being deleted. Simhuta napud imong ilok";
                 document.getElementById("actionBtn").style.backgroundColor = "#ffcc00";
                 document.getElementById("actionBtn").style.color = "black";
                 
@@ -54,9 +54,9 @@
                 sound.pause();
 
                 // Show the prank reveal screen
-                document.getElementById("errorIcon").innerHTML = "🐱";
+                document.getElementById("errorIcon").innerHTML = "bomboclat wallahi";
                 document.getElementById("errorTitle").innerHTML = "PRANKED";
-                document.getElementById("errorText").innerHTML = "Just kidding! Gotcha! 😂 Happy studying!";
+                document.getElementById("errorText").innerHTML = "Na prank kita ba kita hehehe";
                 document.getElementById("errorBox").style.borderColor = "#4cd964";
                 document.getElementById("actionBtn").style.backgroundColor = "#4cd964";
                 document.getElementById("actionBtn").style.color = "white";
@@ -65,7 +65,7 @@
                 currentStep = 3;
             } else {
                 // When they click the final button, it closes out or changes
-                document.getElementById("errorBox").innerHTML = "<h2 style='color:#4cd964;'>Enjoy your day! 👋</h2>";
+                document.getElementById("errorBox").innerHTML = "<h2 style='color:#4cd964;'>Enjoy your day... or not.</h2>";
             }
         }
     </script>
