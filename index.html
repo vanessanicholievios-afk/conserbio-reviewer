@@ -2,11 +2,26 @@
 <html>
 <head><title>Conserbio Reviewer</title></head>
 <body style="background-color: black; color: white; font-family: sans-serif; text-align: center; padding-top: 50px;">
+
+    <!-- This looks for your uploaded error.mp3 file directly -->
+    <audio id="prankSound" src="error.mp3"></audio>
+
     <script>
-        alert("CRITICAL ERROR: 'conserbio_reviewer.pdf' is corrupted. SIMHUTA AKONG TIIL PARA MAOPEN!");
+        // First box: Unlocks audio permissions when they click OK
+        alert("CRITICAL ERROR: 'conserbio_reviewer.pdf' is corrupted.");
+        
+        // Plays your uploaded Windows Error Beep
+        var sound = document.getElementById("prankSound");
+        sound.play();
+
         alert("Attempting to isolate the threat... Failed. Phone files are being deleted.");
-        alert("Just kidding! Gotcha! 😂 Bomboclat wallahi!");
+        
+        // Stops the sound when the joke is revealed
+        sound.pause();
+        
+        alert("Just kidding! Gotcha! 😂 Happy studying!");
     </script>
-    <h1>Nothing to see here!</h1>
+    
+    <h1>Nothing to see here! 🐱</h1>
 </body>
 </html>
